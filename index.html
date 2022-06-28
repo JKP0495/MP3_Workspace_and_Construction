@@ -56,171 +56,231 @@
             </nav> -->
             <div id="panels" class="jsx-2880253090">
                 <div class="jsx-2880253090 lg:w-2/3">
-                    <h1 class="jsx-2880253090 text-2xl lg:text-3xl font-semibold mx-4 lg:mx-16 my-2">MP3 Workspace and Construction</h1>
+                    <h1 class="jsx-2880253090 text-2xl lg:text-3xl font-semibold mx-4 lg:mx-16 my-2">1. Introduction to MP3 :-</h1>
                     <div class="jsx-2880253090 mx-4 lg:mx-16 panel-1 tab-content py-5 break-words">
-                        <p>There is a particular irony to music activity. The entire online music industry is built upon a school subject that most of those young music fans would claim to dislike most: mathematics. What they are really downloading each night are streams of numbers, computed using a calculus-based technique first developed more than 200 years ago.</p>
-                        <p>&nbsp;</p>
+                        <p>As many guardians have found, those large month to month charges from the web access supplier have a great deal to do with their young kids downloading music over the web. The court-requested downfall of music-trading pioneer Napster caused scarcely a hiccup in the everyday exchange of music, with administrations, for example, Audio world, Kazaa, Morpheus and Win MX being utilized to make up for the shortcoming.</p><p>&nbsp;</p>
                         <p>
 
-                            In the early 19th century, the French mathematician Joseph Fourier worked out some mathematical equations to describe the way heat disperses. Those same equations can be used to describe any waveform as a sequence of numbers, including sound waves. In the 60s, an American engineer called R A Moog used Fourier's math to design electronic music synthesizers.
-                        </p>
-                        <p>&nbsp;</p>
-                        <p>
-                            In the 80s, Yamaha, the Japanese electronics company, used the same maths to revolutionize the music industry with the introduction of electronic keyboard instruments. And today, Fourier's equations live on as part of the mathematical framework on which the music encoding scheme MP3 is based. A particularly fascinating aspect to MP3 is that it combines maths with knowledge of the way the human auditory system works. First, let's look at the maths.
-                        </p>
-                        <p>&nbsp;</p>
-                        <p>
-                            Fourier showed how any wave form (including a sound wave) can be broken down into constituent sine waves, those perfectly regular waves that engineers generate on oscilloscopes. The exact pattern of sine waves that combine to form a given sound wave can be represented by a sequence of numbers.</p>
-                            <p>&nbsp;</p>
-                            <p>
-                            Those numbers may be computed from the original wave by a mathematical process known today as a Fourier Transform. In this way, sound may be turned into numbers. Actually, there is a bit more to it than that. The Fourier Transform works not on a wave but on a mathematical description of that wave. So first you have to convert a wave into a mathematical description.
-                            </p>
-                        <p>&nbsp;</p>
-                        <p>The overall algorithm is broken up into 4 main parts.
-                        </p>
-                        <p>
-
-                            ● Part 1 divides the audio signal into smaller pieces, these are called frames. An MDCT filter is then performed on the output.
-                        </p>
-                        <p>
-                            ● Part 2 passes the sample into a 1024-point FFT, and then the psychoacoustic model is applied. Another MDCT filter is performed on the output.
-                        </p>
-                        <p>
-                            ● Part 3 quantifies and encodes each sample. This is also known as noise allocation. The noise allocation adjusts itself in order to meet the bit rate and sound masking requirements.
-                        </p>
-                        <p>
-                            ● Part 4 formats the bitstream, called an audio frame. An audio frame is made up of 4 parts, The Header, Error Check, Audio Data, and Ancillary Data.
-                            </p>
-                            <p>&nbsp;</p>
-                    </div>
-                    <h2 class="jsx-2880253090 text-2xl lg:text-3xl font-semibold mx-4 lg:mx-16 my-2">PART 1: MCDT (Modified Discrete Cosine Transform) FILTER</h2>
+There is a specific incongruity to this movement. The whole internet based music industry is based upon a school subject that the majority of those youthful music fans would profess to despise most: science. What they are truly downloading every night are floods of numbers, figured utilizing a math based strategy initially grew over quite a while back.</p><p>&nbsp;</p>
+</div>
+<h1 class="jsx-2880253090 text-2xl lg:text-3xl font-semibold mx-4 lg:mx-16 my-2">2. ROADMAP OF MP3 :-</h1>
                     <div class="jsx-2880253090 mx-4 lg:mx-16 panel-1 tab-content py-5 break-words">
-                        <p>The MDCT is a Fourier related transform based on type-IV DCT. It has an additional property of being “lapped.” This linear function transforms 2N real numbers to N real numbers according to the equation:
-                            </p>
-                            <p>
-                            F:R2N→RN
-                        </p>
-                        <p>
-                                        Xk=∑2N−1n=−∞xncosπN(n+12+N2)(k+12)
-                                    </p>
-                                    <p>&nbsp;</p>
+                        <img src="1200px-Blockmp3.png">
+</div>
+<h1 class="jsx-2880253090 text-2xl lg:text-3xl font-semibold mx-4 lg:mx-16 my-2">3. MP3 CONSTRUCTION STEP-BY-STEP :-</h1>
+                    <div class="jsx-2880253090 mx-4 lg:mx-16 panel-1 tab-content py-5 break-words">
+<p>
+                                         In the mid nineteenth 100 years, the French mathematician Joseph Fourier worked out a few numerical conditions to portray the manner in which intensity scatters. Those equivalent conditions can be utilized to portray any wave structure as a grouping of numbers, including sound waves. During the 60s, an American specialist called R A Moog utilized Fourier's maths to plan electronic music synthesizers.
+                                        </p><p>&nbsp;</p>
+                                        <p>
+<b>PART 1 : FOURIOR TRANSFORMATION</b>
+</p><p>&nbsp;</p>
+<p>
+                                      During the 80s, Yamaha, the Japanese gadgets organization, utilized similar maths to reform the music business with the presentation of electronic console instruments. What's more, today, Fourier's conditions live on as a feature of the numerical system on which the music encoding plan MP3 is based. An especially intriguing perspective to MP3 is that it joins maths with information on the manner in which the human hear-able framework works. To begin with, we should check the maths out.
+                                    </p><p>&nbsp;</p>
                                     <p>
-                       The MDCT limits the sources of output distortion at the quantization stage. It is also used as and analysis filter given by:
-                    </p>
-                    <p>
-                       
-                                        hk(n)=w(n)2M−−−√cos[(2n+M+1)(2k+1)(π)4M]
-                                    </p>
-                                    <p>&nbsp;</p>
-                                    <p>
-                       The MDCT performs a series of inner products between the input data x(n), and the analysis filter hk(n). This eliminates the blocking artifacts that would cause a problem during the reconstruction of the sample. The final signal is given by:
-                    </p>
-                    <p>
-                                        x(n)=∑M−1k=0[X(k)hk(n)+XP(k)hk(n+M)]
-                       </p>
+Fourier showed how any wave structure (counting a sound wave) can be separated into constituent sine waves, those completely ordinary waves that designers create on oscilloscopes. The specific example of sine waves that join to shape a given sound wave can be addressed by a grouping of numbers.
+</p><p>&nbsp;</p>
+<p>
+Those numbers might be figured from the first wave by a numerical interaction referred to now as a Fourier Transform. Along these lines, sound might be transformed into numbers. In reality, there is something else to it besides that. The Fourier Transform works not on a wave but rather on a numerical portrayal of that wave. So first you need to change over a wave into a numerical portrayal.
+</p><p>&nbsp;</p>
+<p>
+The general calculation of FOURIOR is separated into 4 fundamental parts.
+</p><p>&nbsp;</p>
+<p>
+● MDCT partitions the sound sign into more modest pieces, these are called outlines. A MDCT channel is then performed on the result.
+</p>
+<p>
+● FFT passes the example into a 1024-point FFT, and afterward the psychoacoustic model is applied. One more MDCT channel is performed on the result.
+</p>
+<p>
+● After that it evaluates and encodes each example. This is otherwise called commotion portion. The commotion portion changes itself to meet the piece rate and sound veiling prerequisites.
+</p>
+<p>
+● Then, at that point, it designs the bitstream, called a sound casing. A sound casing is comprised of 4 sections, The Header, Error Check, Audio Data, and Ancillary Data.
+</p><p>&nbsp;</p>
+<p>->Below is some reference to understand clearly:</p>
+<img src="Screenshot 2022-06-28 140900.png">
+<img src="Screenshot 2022-06-28 140922.png">
+<p>&nbsp;</p>
+<p>
+ 
+ 
+
+        <b>PART 2 : HOW WE HEAR MP3</b>
+    </p><p>&nbsp;</p>
+    <p>
+                                                        What compels it sound is that our ears and, all the more for the most part, our hearing framework decipher that wireless transmission as sound. The movement of the air makes a skin film in the internal ear vibrate, and those vibrations are changed over into little electrical flows that stream into the mind. It is those electrical waves that the cerebrum really encounters as sound.
+                                                    </p><p>&nbsp;</p>
+                                                    <p>
+A receiver works in basically the same manner, changing over an approaching sound wave in air into an electrical sign. On the off chance that we feed that electrical sign into an amplifier, the speaker reproduces (a duplicate of) the first solid wave. However, we can likewise do another thing to that electrical wave: we can utilize a strategy known as inspecting to create a grouping of numbers. The most well-known technique is called Pulse Code Modulation (PCM).
+</p><p>&nbsp;</p>
+<p>
+             <b>PART 3 : PCM AND MP3 WORK</b>
+            </p><p>&nbsp;</p>
+            <p>
+                                 PCM takes an electrical wave and measures the voltage of the sign at snapshots of time a little, fixed stretch separated. On account of a sound minimal plate, the examining is completed 44,100 times each second. Subsequently, for each second of sound info, the PCM simple to-computerized converter produces 44,100 numbers, every one the estimation of the voltage at the moment it is examined.
+                                </p><p>&nbsp;</p>
+                                <p>
+On account of a smaller circle, every voltage is estimated to 16-digit precision; that is, the framework can recognize up to 65536 (or 2 to the force of 16) distinct voltages. An example pace of 44,100 every second combined with 16-cycle voltage estimation is adequate to encode any sound as a succession of numbers that, when changed over once more into sound, the human ear can't recognize from the first.
+</p><p>&nbsp;</p>
+<p>
+Sadly, it takes a ton of capacity ability to catch music in this style: 10 megabytes for each moment of (sound system recorded) music, to be exact.
+</p><p>&nbsp;</p>
+<p>
+Given current minimal plate innovation, this is fine for the recording business, yet would make a significant issue if everybody somehow happened to transport CD music documents around the web. This is where Fourier's maths and an information on the human hearing framework comes in. Anybody with a PC knows that there are calculations that can pack information documents (PK-ZIP and Stuffit are two notable models). When applied to a common text document, these bundles can diminish the size of the record by as much as 80%. Be that as it may, with CD quality PCM records, the decrease is just around 10%.
+</p><p>&nbsp;</p>
+<p>
+Calculations extraordinarily intended to work on PCM records have accomplished a 60% decrease, yet that is nothing similar to enough to help web music trading. MP3 works by failing to remember compacting the whole document so the first inspected sound wave can be replicated precisely. All things considered, it purposely disposes of a portion of the data. Accordingly, anything in the first tested sound wave that the human hearing framework can't recognize might be disposed of.
+</p><p>&nbsp;</p>
+<p>
+There is a ton of stuff that can be discarded without our taking note. MP3 is short for MPeg3, or all the more completely MPEG - Level 3. MP3, an industry standard created in 1992 by the German Fraunhofer Research Institute, accomplishes a tremendous pressure proportion of an examined sound wave, going from a variable of eight to an element of 12, contingent upon the source. This implies that the 10MB of stockpiling limit expected to encode one moment of hello fi music on a conservative circle is decreased to a 1 MB MP3 record on a PC hard drive.
+</p><p>&nbsp;</p>
+<p>
+MP3 partitions the recurrence range into 32 groups, every one of which the human ear hears independently. The part of the information signal (examined wave) in every one of those reaches is then exposed to a Fourier-like numerical change that isolates it into a further 18 constituents, creating a sum of 576 individual recurrence groups. Inside every one of those groups, parts imperceptible to the human ear are taken out.
+</p><p>&nbsp;</p>
+<p>
+<b>PART 4 : PSYCHOACOUSTIC ANALYSIS </b>
+</p><p>&nbsp;</p>
+<p>
+                                                     MP3 depends on two layers of pressure, only one of which uses the psychoacoustic examination. Psychoacoustic pressure is best at decreasing confounded sounds with loads of blended parts, since they give a lot of concealing open doors. Less complex sounds don't help much from the psychoacoustic impacts — yet they can be handily compacted utilizing more conventional information strategies. Joining the two methodologies requires a two-step interaction of quantization and Huffman coding, the two of which criticism on one another to give MP3 its noteworthy transmission capacity adaptability.
+                                                    </p><p>&nbsp;</p>
+                                                    <p>
+"Quantization" sounds convoluted, however what it comes down to is the most common way of doling out a mathematical worth to something — giving it an amount, all in all. "Be that as it may, we as of now have numbers," you could dissent. "As a matter of fact, that is all we've been utilizing up and down!" This is valid. However, MP3 wouldn't be a very remarkable pressure technique in the event that it just changed over certain numbers discount starting with one structure then onto the next.
+</p><p>&nbsp;</p>
+<p>
+All things being equal, the 576 post-MDCT recurrence receptacles are arranged into 22 scalefactor groups. By separating the qualities inside the band by a given number (the quantizer) and adjusting, a more modest guess of the first is reached, however some data is lost during the adjusting step. The quantization is a similar across the whole recurrence range, yet individual groups can be increased or down (consequently the scalefactor) for pretty much accuracy. Greater numbers lose less data from the quantization interaction, while more modest numbers are bound to experience the ill effects of adjusting blunder. During the deciphering, this scaling will be turned around with the goal that the sign isn't any stronger or gentler.
+</p><p>&nbsp;</p>
+<p>
+The occupation of every one of those Fast Fourier Transforms (FFTs) in the psychoacoustic model is to have the option to determine how much accuracy is required in a given scalefactor band. Assuming there are frail signals that will be veiled by more grounded sounds in the band, the sign can be downsized so those signs are really shortened off. Sadly, the adjusting blunders likewise make perceptible impacts (commotion, essentially), and the more a sign is decreased, the more noteworthy that clamor will be the point at which it is downsized to its not unexpected plentifulness. So the second assignment of the psychoacoustic model is to really take a look at whether the sign to-commotion proportion has become perceptually horrible. Provided that this is true, the encoder returns to the quantization step and expands the scalefactor, expanding accuracy while decreasing commotion.
+</p><p>&nbsp;</p>
+<p>
+This can be confounding, so how about we utilize another speculative model. Suppose that our uncompressed scalefactor band data is addressed by the number 12,592. We could quantize it by partitioning by the number 100. So with a scalefactor of 1.0 (no change), we store this number as 126, and when we reestablish it during uncompression (duplicating it by a similar quantization factor), we'll wind up with 12,600. We forfeited a few accuracy and added a touch of commotion — our number varies from the first by 8 — however it's very close.
+</p><p>&nbsp;</p>
+<p>
+Nonetheless, in the event that we were able to tolerate somewhat less accuracy and somewhat more commotion, we could scale our unique contribution by .1 to 1,259. Presently it is quantized down to 13. In reestablishing the number, we apply both the quantization and fix the scale factor, winding up with a worth of 13,000 (13 * 100/.1 = 13,000). Presently we're off by somewhat more, however perhaps insufficient to see, contingent upon the unique situation. Furthermore, those more limited stockpiling values occupy less space in a record, especially when joined with the following stage simultaneously.
+</p><p>&nbsp;</p>
+<p>
+
+
+<b>PART 5 : HUFFMAN CODING</b>
+</p><p>&nbsp;</p>
+<p>                                              While it is performing quantization and scaling, a MP3 encoder is additionally involving Huffman coding to transform the data in the scalefactor band into more limited parallel strings. Huffman coding (named for the MIT Ph.D. up-and-comer who created it in 1952) is similar to playing "twenty inquiries" in parallel. Beginning at the highest point of a tree containing every one of the potential responses, the PC drops down through the branches, every one of which is distinguished by either a 1 or a 0 (twofold numbers). Answers are situated toward the finish of a branch, so when the PC arrives at a legitimate outcome, it can quit traveling through the tree.</p><p>&nbsp;</p>
+<p>
+The most well-known answers are put near the top (as in the delineation, which codes the most widely recognized seven letters in English). The upside of Huffman coding is that in light of the fact that the calculation quits dropping down the tree when it finds a response, normal responses can be transformed into exceptionally short numbers (in the speculative model above, assuming that the code begins with a 1 rather than a zero, we compose 'E' and quickly move onto the following grouping).
+</p><p>&nbsp;</p>
+<p>
+These codes can be shown outwardly as a tree. Yet, to a PC program, they're basically a table, and when the PC finds a match, it continues on.
+</p><p>&nbsp;</p>
+<p>
+    <table style="width:100%">
+        <tr>
+          <th>Letter</th>
+          <th>Code</th>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>1</td>
+        </tr>
+        <tr>
+            <td>T</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>0111</td>
+        </tr>
+          <tr>
+            <td>O</td>
+            <td>0110</td>
+          </tr>
+          <tr>
+            <td>N</td>
+            <td>0101</td>
+          </tr>
+          <tr>
+            <td>R</td>
+            <td>01001</td>
+          </tr>
+          <tr>
+            <td>I</td>
+            <td>01000</td>
+          </tr>
+      </table>
+</p>
+<p>&nbsp;</p>
+<p>
+
+At each stage, we section together the images with the least probabilities, and yet again request the rundown. It's most straightforward to comprehend with a model.
+</p><p>&nbsp;</p>
+<p>
+Assume we have 5 letters: A shows up with likelihood 1/2, and B,C,D,E show up with likelihood 1/8 each.
+</p><p>&nbsp;</p>
+<p>
+The most straightforward coding is pick 5 groupings of 3 pieces each, and coordinate them with letters; say A = 000, B = 001, C = 010, D = 011, E = 100. Then, at that point, the typical letter would take 3 pieces to depict. In any case, we can show improvement over this, utilizing the Huffman coding.
+</p><p>&nbsp;</p>
+<p>
+To make the Huffman coding:-
+</p><p>&nbsp;</p>
+<p>
+The Huffman coding
+</p>
+<p>
+At stage 1, section (D,E) together, then, at that point, A has likelihood 1/2, (D,E) has likelihood 1/4, and B,C each have likelihood 1/8.
+</p><p>&nbsp;</p>
+<p>
+At stage 2, section (B,C) together, then, at that point, A has likelihood 1/2, (B,C) has likelihood 1/4 and (D,E) has likelihood 1/4.</p><p>&nbsp;</p>
+<p>
+At stage 3, section ((D,E),(B,C) together, then, at that point, A has likelihood 1/2 thus does (B,C,D,E).</p><p>&nbsp;</p>
+
+<img src="Screenshot 2022-06-28 141508.png">
+
+<p>
+
+Once more, we can address this in a tree, and once more, we can peruse off the names; A = 1, B = 011, C = 010, D = 001, E = 000. In this way, on the off chance that we send an irregular letter, it will take by and large.</p><p>&nbsp;</p>
+<p>
+
+ 	[ (1/2) 1 + (1/8) 3 + (1/8) 3 + (1/8) 3 + (1/8) 3] = 2</p>
+     <p>
+pieces to portray.
+</p><p>&nbsp;</p>
+<p>
+Moving from 3 pieces to 2 pieces is what we call information pressure. By taking advantage of our insight into the probabilities, we can save space. Surprisingly better, in the event that we encode more than one letter, this strategy gives an understandable message; for instance, in the event that somebody stores the message 01101011000011, they can later split it up (beginning from the left) into 011/010/1/1/000/011 or BCAAEB.
+</p><p>&nbsp;</p>
+<p>
+It's obviously true that this exceptionally basic Huffman coding offers the most ideal exhibition. That is, there exists no coding from single letters A,B,C,D,E to accumulations of 0s and 1s which is (I) understandable (ii) has a more limited typical length with these probabilities. Attempt it and see! Besides this property doesn't have anything to do with the specific probabilities. Whatever the assortment of letters, and anything their probabilities, the Huffman coding will constantly best!</p><p>&nbsp;</p>
+<p>
+Now that we've covered the method involved with transforming computerized sound into MP3, you might be thinking about how it gets back out. Albeit the construction of a decoder isn't the very converse of its encoding partner, it is close. For translating, the Huffman pieces are turned around into quantized data, downsized to the first level, and afterward recombined with one more into PCM tests that can be played by the normal sound card.</p><p>&nbsp;</p>
+<p>
+You'd feel that unloading this information would be sufficient to keep MP3s little, however Fourier changes aren't the main numerical stunt for extracting the most from your music. A procedure called Huffman coding diminishes record sizes by making the most well-known pieces of a MP3 more modest.
+</p><p>&nbsp;</p>
+<p>
+A MP3 recording is essentially a rundown of numbers that depict the sound wave at some random point, and each number is put away as a parallel code that can fluctuate long. Similarly as the letter E manifests more frequently than a Z or a Q, a few numbers in a MP3 are more normal than others, and by looking at their recurrence we can change the paired code to make it more memory productive.
+</p><p>&nbsp;</p>
+<p>
+Numbers that happen most frequently get a short twofold portrayal, while the less continuous ones are doled out a more drawn out code. By and large, the twofold for the entire grouping of numbers winds up more limited than if you utilized a fixed-length code. Huffman coding isn't simply used to make in MP3 pressure - it packs information in compress documents, JPEG pictures, from there, the sky is the limit.
+</p><p>&nbsp;</p>
+</div>
+<h1 class="jsx-2880253090 text-2xl lg:text-3xl font-semibold mx-4 lg:mx-16 my-2">4. CONCLUSION :-</h1>
+                    <div class="jsx-2880253090 mx-4 lg:mx-16 panel-1 tab-content py-5 break-words">
+<p>
+                           Free music at the stroke of a couple of keys on the console for any young person with a PC. (Limiting the web association charges their folks pay toward the month's end.) With purchaser gadgets stores offering new MP3 players at regular intervals, and with a huge number of PC proprietors trading music documents unlawfully (as well as at times downloading them truly), the cutting edge music industry is based on math as much as whatever else. What Joseph Fourier would have made of the present utilizations of his unique numerical examination of intensity waves is impossible to say.
+                            </p>
                     </div>
-                    <h2 class="jsx-2880253090 text-2xl lg:text-3xl font-semibold mx-4 lg:mx-16 my-2">PART 2: 1024-point FFT (Fast Fourier Transform)</h2>
+                    <h1 class="jsx-2880253090 text-2xl lg:text-3xl font-semibold mx-4 lg:mx-16 my-2">5. REFFERENCE :-</h1>
                     <div class="jsx-2880253090 mx-4 lg:mx-16 panel-1 tab-content py-5 break-words">
                         <p>
-                            The FFT is an algorithm that computes the Discrete Fourier Transform and its inverse. In general the DFT is found by using the equation:</p>
-                            <p>
-
-
-                 Xk=∑N−1n=0xne−2iπknN Where X0...XN−1are complex numbers and k = 0... N-1
-                </p>
-                <p>&nbsp;</p>
-                <p>
-The FFT is used as a filter bank on an audio sample. It is used to filter out unwanted or unneeded data from the sample.
-</p>
-<p>&nbsp;</p>
-<p>
-● First, incoming audio samples, s(n) , are normalized based the following equation x(n):
-</p>
-<p>
-                 x(n)=s(n)N(2b−1)
-                </p>
-                <p>
-Where N is the FFT length of the sample and b is the number of bits in the sample.
-</p>
-<p>&nbsp;</p>
-<p>
-
-● Second, the masking threshold of the sample is found by using an estimate of the power density spectrum, P(k). P(k) is computed by using a 1024-point FFT.
-</p>
-<p>
-                 x(n)=Pk+10log[∑N−1n=0h(n)x(n)exp(−j2πknN)]2, 0 ≤ k ≤ N-1
-                </p>
-                <p>
-Where h(n) is a Hann Window
-</p>
-<p>&nbsp;</p>
-<p>
-Engineers do this by taking note of a trick nature performed many years ago when she developed animal hearing systems. A sound wave consists of a ripple in the air.
-</p>
-<p>&nbsp;</p>
-<p>
-What makes it sound is that our ears and, more generally, our hearing system interpret that airwave as sound. The motion of the air causes a skin membrane in the inner ear to vibrate, and those vibrations are converted into tiny electrical currents that flow into the brain. It is those electrical waves that the brain actually experiences as sound.
-</p>
-<p>&nbsp;</p>
-<p>
-A microphone works in essentially the same way, converting an incoming sound wave in the air into an electrical signal. If we feed that electrical signal into a loudspeaker, then the speaker recreates (a copy of) the original sound wave. But we can also do something else to that electrical wave: we can use a method known as sampling to generate a sequence of numbers. The most common procedure is called Pulse Code Modulation (PCM).
-</p>
-<p>&nbsp;</p>
-<p>
-
-
-This takes an electrical wave and measures the voltage of the signal at moments of time a small, fixed interval apart. In the case of an audio compact disc, the sampling is done 44,100 times a second. Thus, for each second of sound input, the PCM analog-to-digital converter generates 44,100 numbers, each one the measurement of the voltage at the instant it is sampled.
-</p>
-<p>&nbsp;</p>
-<p>
-In the case of a compact disc, each voltage is measured to 16-bit accuracy; that is, the system can distinguish up to 65536 (or 2 to the power of 16) different voltages. A sample rate of 44,100 per second coupled with 16-bit voltage measurement is sufficient to encode any sound as a sequence of numbers that, when converted back into sound, the human ear cannot distinguish from the original.
-Unfortunately, it takes a lot of storage capacity to capture music in this fashion: 10 megabytes for every minute of (stereo-recorded) music, to be precise.
-</p>
-<p>&nbsp;</p>
-<p>
-Given modern compact disc technology, this is fine for the recording industry, but would create a major problem if everyone were to ship CD music files around the internet. This is where Fourier's maths and a knowledge of the human hearing system comes in. Anyone with a computer is aware that there are algorithms that can compress data files (PK-ZIP and Stuffit are two well-known examples). When applied to a typical text file, these packages can reduce the size of the file by as much as 80%. But with CD quality PCM files, the reduction is only around 10%.
-</p>
-<p>&nbsp;</p>
-<p>
-Algorithms specially designed to operate on PCM files have achieved a 60% reduction, but that is nothing like enough to support internet music swapping. MP3 works by forgetting the idea of compressing the entire file so that the original sampled sound wave can be reproduced exactly. Instead, it deliberately discards some of the information. Thus, anything in the original sampled sound wave that the human hearing system cannot detect may be discarded.
-</p>
-<p>&nbsp;</p>
-<p>
-There is a lot of stuff that can be thrown away without our noticing. MP3 is short for MPeg3, or more fully MPEG - Level 3. MP3, an industry-standard developed in 1992 by the German Fraunhofer Research Institute, achieves a spectacular compression ratio of a sampled audio wave, ranging from a factor of eight to a factor of 12, depending on the source. This means that the 10MB of storage capacity needed to encode one minute of hi-fi music on a compact disc is reduced to a 1 MB MP3 file on a computer hard drive.
-</p>
-<p>&nbsp;</p>
-<p>
-MP3 divides the frequency range into 32 bands, each of which the human ear hears separately. The component of the input signal (sampled wave) in each of those ranges is then subjected to a Fourier-like mathematical transformation that separates it into a further 18 constituents, generating a total of 576 individual frequency bands. Within each of those bands, components undetectable to the human ear are removed.
-</p>
-<p>&nbsp;</p>
-<p>
-The resulting signal is then compressed further by Huffman coding, a technique familiar to computer scientists, which represents frequently occurring values by shorter codes than used for less frequently occurring values. (For instance, it would be highly wasteful to use the default 141,120 bits of the sampled wave to encode a 1/10 second silence in a song.) The result of all this maths?
-</p>
-<p>&nbsp;</p>
-<p>
-MP3 relies on two layers of compression, only one of which utilizes the psychoacoustic analysis. Psychoacoustic compression is best at reducing complicated sounds with lots of mixed components, because they provide plenty of masking opportunities. Simpler sounds do not benefit much from the psychoacoustic effects—but they can be easily compressed using more traditional data techniques. Combining both approaches requires a two-step process of quantization and Huffman coding, both of which feed back on each other to provide MP3 with its impressive bandwidth flexibility.
-</p>
-<p>&nbsp;</p>
-<p>
-The word "quantization" sounds complicated, but what it boils down to is the process of assigning a numerical value to something—giving it a quantity, in other words. "But we already have numbers," you might protest. "In fact, that's all we've been using all along!" This is true. But MP3 wouldn't be much of a compression method if it just converted some numbers wholesale from one form to another.
-</p>
-<p>&nbsp;</p>
-<p>
-Instead, the 576 post-MDCT frequency bins are sorted into 22 scalefactor bands. By dividing the values within the band by a given number (the quantizer) and rounding, a smaller approximation of the original is reached, but some information is lost during the rounding step. The quantization is the same across the entire frequency spectrum, but individual bands can be scaled up or down (hence the scalefactor) for more or less precision. Bigger numbers lose less information from the quantization process, while smaller numbers are more likely to suffer from rounding error. During the decoding, this scaling will be reversed so that the signal isn't any louder or softer.
-</p>
-<p>&nbsp;</p>
-<p>
-The job of all those Fast Fourier Transforms (FFTs) in the psychoacoustic model is to be able to specify how much precision is needed in a given scalefactor band. If there are weak signals that will be masked by stronger sounds in the band, the signal can be scaled down so that those signals are effectively truncated off. Unfortunately, the rounding errors also have audible effects (noise, basically), and the more a signal is reduced, the greater that noise will be when it is scaled back to its normal amplitude. So the second task of the psychoacoustic model is to check whether the signal-to-noise ratio has become perceptually unfavorable. If so, the encoder goes back to the quantization step and increases the scalefactor, increasing precision while reducing noise.
-</p>
-<p>&nbsp;</p>
-<p>
-This can be confusing, so let's use another hypothetical example. Let's say that our uncompressed scalefactor band information is represented by the number 12,592. We might quantize it by dividing by the number 100. So with a scalefactor of 1.0 (no change), we store this number as 126, and when we restore it during uncompression (multiplying it by the same quantization factor), we'll end up with 12,600. We sacrificed some precision and added a bit of noise—our number differs from the original by 8—but it's pretty close.
-</p>
-<p>&nbsp;</p>
-<p>
-However, if we were willing to put up with a little less precision and a little more noise, we could scale our original input by .1 to 1,259. Now it is quantized down to 13. In restoring the number, we apply both the quantization and undo the scale factor, ending up with a value of 13,000 (13 * 100 / .1 = 13,000). Now we're off by a bit more, but maybe not enough to notice, depending on the context. And those shorter storage values take up less room in a file, particularly when combined with the next stage in the process.
-
+                        <a href="https://www.mathscareers.org.uk/how-mp3-compression-work/">• https://www.mathscareers.org.uk/how-mp3-compression-work/</a>
                         </p>
+                        <p>
+                        <a href="https://www.projectrhea.org/rhea/index.php/Use_of_Fourier_Transforms_in_MP3_Audio_Compression">• https://www.projectrhea.org/rhea/index.php/Use_of_Fourier_Transforms_in_MP3_Audio_Compression</a></p>
+                        <p>
+                        <a href="https://www.theguardian.com/technology/2002/apr/04/internetnews.maths">• https://www.theguardian.com/technology/2002/apr/04/internetnews.maths</a></p>
+                        <p>
+                        <a href="http://www.linkwitzlab.com/Brandenburg_mp3_aac.pdf">• http://www.linkwitzlab.com/Brandenburg_mp3_aac.pdf</a></p>
+                        <p>
+                        <a href="https://plus.maths.org/content/os/issue23/features/data/index">• https://plus.maths.org/content/os/issue23/features/data/index</a></p>
+                        
                     </div>
                 </div>
             </div>
